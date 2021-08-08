@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* :root{
+   background: whitesmoke;
+} */
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+.body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height:100vh;
+   padding:40px;
+   
+  
+}
+.wrapper {
+   max-width: 1366px ;
+   width:100%;
+   margin: auto;
+   display:flex;
+   flex-wrap:wrap;
+   flex-direction: row;
+   /* flex-flow: column wrap ; */
+   justify-content: center;
+   background-color: lightgrey;
+}
+.wrapper .card{
+    width: calc(33% -20px);
+    /* padding: 50px 0px 0 0px; */
+    padding: 50px 0px 0px ;
+    margin-top: 5px;
+    position: relative;
+    
+}
+.wrapper .card .box-1{
+   /* display: flex; */
+   background-color: hsl(31,77%,52%);
+   padding: 50px 50px 50px 30px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   border-radius: 10px 0px 0px 10px;
+
+   
+}
+.wrapper .card .box-2{
+  /* display: flex; */
+  background-color: hsl(184,100%,22%);
+
+   padding: 50px 50px 50px 30px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1)
+}
+.wrapper .card .box-3{
+  /* display: flex; */
+  background-color: hsl(179,100%,13%);
+  padding: 50px 50px 50px 30px;
+  border-radius: 0px 10px 10px 0px;
+  /* justify-content:stretch */
+  /* margin-bottom: 50px; */
+}
+/* .wrapper, .card, .box1, .box-2, .box-3{
+   padding: 100px 
+} */
+/* .wrapper .card, .box-1, .box-2, .box-3, .logo{
+    display: flex;
+   justify-content: center; 
+} */
+.wrapper .card, .box-1, .box-2, .box-3, .logo img{
+   padding-bottom: 20px;
+}
+
+.wrapper .card, .box-1, .box-2, .box-3, .Title-section{
+   padding-bottom: 20px;
+   position: relative;
+}
+
+.wrapper .card .box-1 .Title-section h1 {
+   color: hsl(0,0%, 95%);
+   font-family: 'Big Shoulders Display', cursive;
+   font-size: 35px;
+}
+.wrapper .card .box-2 .Title-section h1 {
+   color: hsl(0,0%, 95%);
+   font-family: 'Big Shoulders Display', cursive;
+   font-size: 35px;
+}
+.wrapper .card .box-3 .Title-section h1 {
+   color: hsl(0,0%, 95%);
+   font-family: 'Big Shoulders Display', cursive;
+   font-size: 35px;
+}
+.wrapper .card, .box-1, .content .p{
+   color: hsl(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+   line-height: 2
+}
+.wrapper .card, .box-2, .content .p{
+   color: hsl(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+
+}
+.wrapper .card, .box-3, .content .p{
+   color: hsl(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+   
+}
+.wrapper .card, .box-1, .box-2, .box-3, .content{
+   padding-bottom: 50px;
+}
+
+.wrapper .card .box-1 .btn{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   padding-left:20px;
+   border-radius: 25px;   
+}
+.wrapper .card .box-2 .btn{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   padding-left:20px;
+   border-radius: 25px;  
+}
+.wrapper .card .box-3 .btn{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   padding-left:20px;
+   border-radius: 25px;   
+}
+.wrapper .card .box-1 .btn button{
+   border:none;
+   width: 80%;
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(31,77%,52%);  
+}
+.wrapper .card .box-2 .btn button{
+   border:none;
+   width:80%; 
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(184,100%,22%);  
+}
+.wrapper .card .box-3 .btn button{
+   border:none;
+   width: 80%;
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(179,100%,13%);
+}
+.wrapper .card .box-1 .btn:hover{
+   background-color:hsl(31,77%,52%);
+   border: 2px solid white;
+}
+.wrapper .card .box-2 .btn:hover{
+   background-color:hsl(184,100%,22%);
+   border: 2px solid white;
+}
+.wrapper .card .box-3 .btn:hover{
+   background-color:hsl(179,100%,13%);
+   border: 2px solid white;
+}
+.wrapper .card .box-1 .btn button:hover{
+   background-color: hsl(31,77%,52%);
+   color:white;
+   outline: white;
+}
+.wrapper .card .box-2 .btn button:hover{
+   background-color: hsl(184,100%,22%);
+   color:white;
+   outline: white;
+}
+.wrapper .card .box-3 .btn button:hover{
+   background-color: hsl(179,100%,13%);
+   color:white;
+   outline: white;
+}
+
+.wrapper .card .box-1 button{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   /* padding-left:20px; */
+   border-radius: 25px;
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(31,77%,52%); 
+   outline:none;
+   border:none;  
+}
+.wrapper .card .box-2 button{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   /* padding-left:20px; */
+   border-radius: 25px;
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(184,100%,22%); 
+   outline:none;
+   border:none;  
+}
+.wrapper .card .box-3 button{
+   background-color: hsl(0,0%,95%);
+   width:75%;
+   margin-top: 25px;
+   /* padding-left:20px; */
+   border-radius: 25px;
+   height: 50px;
+   font-size: 15px;
+   font-weight: 550;
+   color: hsl(179,100%,13%); 
+   outline:none;
+   border:none;  
+}
+.wrapper .card .box-1 button:hover{
+   background-color:hsl(31,77%,52%);
+   color:white;
+   border: 2px solid white;
+}
+.wrapper .card .box-2 button:hover{
+   background-color:hsl(184,100%,22%);
+   color:white;
+   border: 2px solid white;
+}
+.wrapper .card .box-3 button:hover{
+   background-color:hsl(179,100%,13%);
+   border: 2px solid white;
+   color:white
+}
+@media(max-width:1440px){
+   .wrapper.card{
+      width: 50%;
+      /* width: calc(100% -20px); */
+      /* width: calc(50% -20px); */
+      /* flex:80%; */
+      margin-bottom: 10px; 
+   }
+}
+@media (max-width: 375px){
+   .wrapper {
+      /* padding:0 0 50px;
+      width: calc(100% -20px);
+      margin-bottom: -103px; */
+      /* flex:50%; */
+      width: 100%;
+      /* width: calc(50% -20px); */
+      margin-bottom: 10px; 
+   }
+  
+}
